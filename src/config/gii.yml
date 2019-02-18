@@ -1,0 +1,14 @@
+config:
+  messageCategory: entero:mailer
+migration:
+  create_mail_queue_table:
+    fields: |
+      subject:string(255),
+      created_at:integer(11),
+      attempts:integer(11),
+      last_attempt_time:integer(11),
+      sent_time:integer(11),
+      time_to_send:integer(11),
+      swift_message:text
+model:
+  MailqueueInit:
