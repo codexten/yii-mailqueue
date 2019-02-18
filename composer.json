@@ -1,0 +1,23 @@
+{
+  "name": "codexten/yii-mailer",
+  "type": "yii2-extension",
+  "description": "Codexten Yii Mailer",
+  "autoload": {
+    "psr-4": {
+      "codexten\\yii\\mailer\\": "src"
+    }
+  },
+  "require": {
+    "yiisoft/yii2-swiftmailer": "~2.0.7",
+    "katzgrau/klogger": "~1.2.1"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev"
+    },
+    "sconfig-plugin": {
+      "migrationNamespaces": "src/config/migrationNamespaces.php",
+      "console": "src/config/console.php"
+    }
+  }
+}
