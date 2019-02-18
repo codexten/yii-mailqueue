@@ -1,5 +1,5 @@
 config:
-  messageCategory: entero:mailer
+  messageCategory: codexten:mailqueue
 migration:
   create_mail_queue_table:
     fields: |

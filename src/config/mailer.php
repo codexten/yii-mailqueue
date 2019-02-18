@@ -14,8 +14,8 @@ return [
         'transport' => [
             'class' => 'Swift_SmtpTransport',
             'host' => 'smtp.gmail.com',
-            'username' => 'developer.entero@gmail.com',
-            'password' => 'developer.entero!@#',
+            'username' => $params['gmail.username'],
+            'password' => $params['gmail.password'],
             'port' => 587,
             'encryption' => 'tls',
         ],
