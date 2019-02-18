@@ -2,7 +2,7 @@
 
 /**
  * Mail Command Controller
- * 
+ *
  * @author Rochdi B. <rochdi80tn@gmail.com>
  */
 
@@ -12,17 +12,14 @@ use yii\console\Controller;
 
 /**
  * This command processes the mail queue
- *
- * @author Rochdi B. <rochdi80tn@gmail.com>
- * @since 0.0.6
  */
 class MailQueueController extends Controller
 {
-    
+
     public $defaultAction = 'process';
-      
+
     /**
-     * This command processes the mail queue     
+     * This command processes the mail queue
      */
     public function actionProcess()
     {

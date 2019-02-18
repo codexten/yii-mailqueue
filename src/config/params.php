@@ -7,6 +7,9 @@
  */
 
 return [
+    // default mailer
+    'mailer' => 'gmail',
+
     'gmail.username' => '',
     'gmail.password' => '',
 ];

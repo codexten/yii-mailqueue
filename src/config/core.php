@@ -8,7 +8,7 @@
 
 return [
     'components' => [
-        // TODO : temp fix, find good solution
-        'mailer' => isset($mailer) ? $mailer[$params['mailer']] : [],
+        'mailer' => $mailer[$params['mailer']],
+        'mailqueue' => $mailer[$params['mailer']],
     ],
 ];

@@ -9,12 +9,11 @@
 namespace codexten\yii\mailqueue;
 
 use codexten\yii\mailqueue\logger\KLogger;
+use entero\models\Queue;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\di\Instance;
 use yii\swiftmailer\Mailer;
-use codexten\yii\mailqueue\Message;
-use entero\models\Queue;
 
 /**
  * MailQueue is a sub class of [yii\switmailer\Mailer](https://github.com/yiisoft/yii2-swiftmailer/blob/master/Mailer.php)

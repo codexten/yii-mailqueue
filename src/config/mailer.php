@@ -8,7 +8,7 @@
 
 return [
     'gmail' => [
-        'class' => 'yii\swiftmailer\Mailer',
+        'class' => '\codexten\yii\mailqueue\MailQueue',
         'useFileTransport' => false,
         'htmlLayout' => false,
         'transport' => [
