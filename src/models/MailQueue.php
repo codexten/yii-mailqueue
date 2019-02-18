@@ -6,7 +6,7 @@
  * Time: 3:38 PM
  */
 
-namespace codexten\mailqueue\models;
+namespace codexten\yii\mailqueue\models;
 
 use Yii;
 use yii\db\ActiveRecord;

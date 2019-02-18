@@ -6,14 +6,14 @@
  * @author Saranga Abeykoon http://nterms.com
  */
 
-namespace codexten\mailqueue;
+namespace codexten\yii\mailqueue;
 
-use codexten\mailqueue\logger\KLogger;
+use codexten\yii\mailqueue\logger\KLogger;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\di\Instance;
 use yii\swiftmailer\Mailer;
-use codexten\mailqueue\Message;
+use codexten\yii\mailqueue\Message;
 use entero\models\Queue;
 
 /**
@@ -57,7 +57,7 @@ class MailQueue extends Mailer
     /**
      * @var string message default class name.
      */
-    public $messageClass = 'codexten\mailqueue\Message';
+    public $messageClass = 'codexten\yii\mailqueue\Message';
 
     /**
      * @var string the name of the database table to store the mail queue.
@@ -125,7 +125,7 @@ class MailQueue extends Mailer
         $success = true;
 
         while (true) {
-            $items = \codexten\mailqueue\models\MailQueue::find()->where([
+            $items = \codexten\yii\mailqueue\models\MailQueue::find()->where([
                 'and',
                 ['sent_time' => null],
                 ['<', 'attempts', $this->maxAttempts],

@@ -5,7 +5,7 @@
  * @author Saranga Abeykoon http://nterms.com
  */
 
-namespace codexten\mailqueue;
+namespace codexten\yii\mailqueue;
 
 use entero\models\Queue;
 
@@ -27,7 +27,7 @@ class Message extends \yii\swiftmailer\Message
             $time_to_send = time();
         }
 
-        $item = new \codexten\mailqueue\models\MailQueue();
+        $item = new \codexten\yii\mailqueue\models\MailQueue();
 
         $item->subject = $this->getSubject();
         $item->attempts = 0;

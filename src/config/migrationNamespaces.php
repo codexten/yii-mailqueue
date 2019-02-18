@@ -7,5 +7,5 @@
  */
 
 return [
-    'codexten\mailqueue\migrations'
+    'codexten\yii\mailqueue\migrations'
 ];

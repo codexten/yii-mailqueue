@@ -6,7 +6,7 @@
  * @author Rochdi B. <rochdi80tn@gmail.com>
  */
 
-namespace codexten\mailqueue\commands;
+namespace codexten\yii\mailqueue\commands;
 
 use yii\console\Controller;
 

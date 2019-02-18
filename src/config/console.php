@@ -9,7 +9,7 @@
 return [
     'controllerMap' => [
         'mailqueue' => [
-            'class' => 'codexten\mailqueue\commands\MailQueueController'
+            'class' => 'codexten\yii\mailqueue\commands\MailQueueController'
         ],
     ],
 ];

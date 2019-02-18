@@ -5,7 +5,7 @@
  * @license https://entero.co.in/license/
  */
 
-namespace codexten\mailqueue;
+namespace codexten\yii\mailqueue;
 
 use yii\base\BaseObject;
 

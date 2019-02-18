@@ -1,6 +1,6 @@
 <?php
 
-namespace codexten\mailqueue\migrations;
+namespace codexten\yii\mailqueue\migrations;
 
 use yii\db\Migration;
 

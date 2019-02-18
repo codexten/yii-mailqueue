@@ -2,20 +2,20 @@
   "name": "codexten/yii-mailqueue",
   "type": "yii2-extension",
   "description": "Codexten Yii Mailer",
-  "autoload": {
-    "psr-4": {
-      "codexten\\yii\\mailer\\": "src"
-    }
-  },
   "require": {
     "yiisoft/yii2-swiftmailer": "~2.0.7",
     "katzgrau/klogger": "~1.2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "codexten\\yii\\mailqueue\\": "src"
+    }
   },
   "extra": {
     "branch-alias": {
       "dev-master": "2.0.x-dev"
     },
-    "sconfig-plugin": {
+    "config-plugin": {
       "mailer": "src/config/mailer.php",
       "migrationNamespaces": "src/config/migrationNamespaces.php",
       "console": "src/config/console.php"

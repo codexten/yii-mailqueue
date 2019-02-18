@@ -6,7 +6,7 @@
  * Time: 4:22 PM
  */
 
-namespace codexten\mailqueue\logger;
+namespace codexten\yii\mailqueue\logger;
 
 use Katzgrau\KLogger\Logger;
 use Psr\Log\LogLevel;
@@ -16,7 +16,7 @@ use Psr\Log\LogLevel;
  *
  * @package entero\process\logger
  */
-class KLogger extends \codexten\mailqueue\Logger
+class KLogger extends \codexten\yii\mailqueue\Logger
 {
     public $logFolder = '@console/runtime/process-logs';
     public $fileName;
