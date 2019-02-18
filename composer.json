@@ -1,5 +1,5 @@
 {
-  "name": "codexten/yii-mailer",
+  "name": "codexten/yii-mailqueue",
   "type": "yii2-extension",
   "description": "Codexten Yii Mailer",
   "autoload": {
