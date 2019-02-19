@@ -21,7 +21,7 @@ class M181013113749Create_mail_queue_table extends Migration
             'last_attempt_time' => $this->integer(11),
             'sent_time' => $this->integer(11),
             'time_to_send' => $this->integer(11),
-            'swift_message' => $this->text(),
+            'swift_message' => $this->tex(),
             'created_at' => $this->integer(11)
         ]);
     }
