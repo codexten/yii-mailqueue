@@ -23,6 +23,6 @@ class MailQueueController extends Controller
      */
     public function actionProcess()
     {
-        \Yii::$app->mailer->process();
+        \Yii::$app->mailqueue->process();
     }
 }

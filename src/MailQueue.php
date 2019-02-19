@@ -100,8 +100,10 @@ class MailQueue extends Mailer
     {
         parent::init();
         if (is_string($this->logger)) {
-            $this->logger = ['class' => $this->logger,
-                'fileName' => 'Mail-Queue-log'];
+            $this->logger = [
+                'class' => $this->logger,
+                'fileName' => 'Mail-Queue-log',
+            ];
         } else {
             if (!isset($this->logger['class'])) {
                 throw new InvalidConfigException('Logger Class Name must be specified');
