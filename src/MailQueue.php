@@ -9,7 +9,6 @@
 namespace codexten\yii\mailqueue;
 
 use codexten\yii\mailqueue\logger\KLogger;
-use entero\models\Queue;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\di\Instance;
@@ -115,7 +114,7 @@ class MailQueue extends Mailer
 
     /**
      * @return bool
-     * @throws \yii\base\InvalidConfigException
+     * @throws InvalidConfigException
      */
     public function process()
     {
@@ -133,7 +132,7 @@ class MailQueue extends Mailer
                 ['<=', 'time_to_send', date('Y-m-d H:i:s')],
             ])->orderBy(['created_at' => SORT_ASC])->limit($this->mailsPerRound);
             foreach ($items->each() as $item) {
-                /* @var Queue $item */
+                /* @var \codexten\yii\mailqueue\models\MailQueue $item */
 
                 if ($message = $item->toMessage()) {
                     $attributes = ['attempts', 'last_attempt_time'];

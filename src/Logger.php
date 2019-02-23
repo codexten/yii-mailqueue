@@ -1,9 +1,4 @@
 <?php
-/**
- * @link https://entero.co.in/
- * @copyright Copyright (c) 2012 Entero Software Solutions Pvt.Ltd
- * @license https://entero.co.in/license/
- */
 
 namespace codexten\yii\mailqueue;
 
@@ -12,7 +7,7 @@ use yii\base\BaseObject;
 /**
  * Class Logger
  *
- * @package entero\process
+ * @package codexten\yii\mailqueue
  */
 abstract class Logger extends BaseObject implements LoggerInterface
 {

@@ -14,7 +14,7 @@ use Psr\Log\LogLevel;
 /**
  * Class KLogger
  *
- * @package entero\process\logger
+ * @package codexten\yii\mailqueue\logger
  */
 class KLogger extends \codexten\yii\mailqueue\Logger
 {
