@@ -2,14 +2,14 @@
 
 namespace codexten\yii\mailqueue;
 
-use yii\base\BaseObject;
+use yii\base\Component;
 
 /**
  * Class Logger
  *
  * @package codexten\yii\mailqueue
  */
-abstract class Logger extends BaseObject implements LoggerInterface
+abstract class Logger extends Component implements LoggerInterface
 {
     /**
      * @var string
